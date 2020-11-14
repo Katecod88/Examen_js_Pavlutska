@@ -1,0 +1,390 @@
+html,
+body,
+p,
+a,
+ul,
+li,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #D7D7D7;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.header_container {
+  background-color: #F6F6F6;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.header_logo a {
+  color: #009595;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.header_search {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.header_search_wrapper {
+  width: 300px;
+  height: 41px;
+  position: relative;
+}
+
+.header_search_input {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+
+.header_search_input::placeholder {
+  color: #b3b3b3;
+}
+
+.header_search_button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+}
+
+.header_search_button img {
+  width: 20px;
+  height: 20px;
+}
+
+.navigation {
+  background-color: #404040;
+}
+
+.nav_links_list {
+  list-style: none;
+  display: flex;
+}
+
+.link_nav_weather {
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+}
+.link_nav_weather:hover {
+  border-bottom: 2px solid #009595;
+}
+.link_nav_weather a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.active {
+  border-bottom: 2px solid #009595;
+}
+
+#current_weather_link {
+  border-right: 1px solid #ffffff46;
+  border-left: 1px solid #ffffff46;
+}
+
+.current_weather_section {
+  background-color: #ffffff;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.current_weather_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section_header {
+  color: #009595;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.date_wrapper {
+  color: #009595;
+  font-weight: 600;
+}
+
+.current_weather_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.clarity_wrapper {
+  text-align: center;
+}
+
+#img_weather {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature_wrapper {
+  text-align: center;
+}
+
+.temperature {
+  font-size: 45px;
+}
+
+.day_duration_wrapper {
+  display: flex;
+  line-height: 2;
+}
+
+.duration_header {
+  margin-right: 15px;
+}
+
+.hourly_weather_section,
+.hourly_weather_section_forecast {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.hourly_weather_header {
+  margin-bottom: 20px;
+}
+
+.widget_row_time {
+  display: flex;
+}
+
+.time_item {
+  width: 165px;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.widget_value_icon {
+  width: 80px;
+  height: 80px;
+}
+
+.widget_forecast_row {
+  display: flex;
+}
+.widget_forecast_row div {
+  width: 165px;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: 1px solid #4040406e;
+  line-height: 2;
+}
+
+.widget_temperature_row {
+  display: flex;
+}
+.widget_temperature_row div {
+  width: 165px;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: 1px solid #4040406e;
+  line-height: 2;
+}
+
+.widget_real_feel_row {
+  display: flex;
+}
+.widget_real_feel_row div {
+  width: 165px;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: 1px solid #4040406e;
+  line-height: 2;
+}
+
+.widget_wind_row {
+  display: flex;
+}
+.widget_wind_row div {
+  width: 165px;
+  text-align: left;
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.nearby_places_section {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.nearby_places_header {
+  margin-bottom: 20px;
+}
+
+.clarity_icon {
+  width: 50px;
+  height: 50px;
+}
+
+.nearby_places_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nearby_place_container {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.city {
+  width: 70%;
+}
+
+.five_days_forecast_section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.five_days_forecast_wrapper {
+  background-color: #009595;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 20px;
+  width: 19%;
+  text-align: center;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.section_header_forecast {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.forecast_selected {
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.forecast_icon {
+  width: 120px;
+  height: 120px;
+}
+
+.for_day_forecast {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.widget_icon_description {
+  text-align: center;
+  line-height: 2;
+}
+
+.widget_temperature_wind {
+  text-align: center;
+}
+
+.time_forecast {
+  display: flex;
+  align-items: center;
+}
+
+.widget_icon_forecast {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature_item {
+  font-size: 45px;
+}
+
+.morning_wrapper,
+.day_wrapper,
+.eve_wrapper,
+.night_wrapper {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+.morning_wrapper p:first-child,
+.day_wrapper p:first-child,
+.eve_wrapper p:first-child,
+.night_wrapper p:first-child {
+  width: 90px;
+}
+
+.error {
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+.error_wrapper {
+  font-size: 20px;
+  text-align: center;
+  color: #404040;
+  font-weight: 600;
+}
+.error_wrapper svg {
+  width: 200px;
+  object-fit: cover;
+}
